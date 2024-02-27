@@ -5,10 +5,10 @@
   <a href="https://www.linkedin.com/in/victor-wagner" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href="https://app.daily.dev/hyuko21" target="_blank">
     <img
-      src="https://github.com/hyuko21/hyuko21/blob/main/devcard.svg"
+      src="https://github.com/hyuko21/hyuko21/blob/main/devcard.png"
       width="256"
       align="right"
-      alt="Victor Wagner's Dev Card"
+      alt="Victor Ribeiro's Dev Card"
     />
   </a>
 </div>
