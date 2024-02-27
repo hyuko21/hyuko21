@@ -13,9 +13,7 @@
   </a>
 </div>
 
-<br/>
-
-## I am Victor Ribeiro
+### I am Victor Ribeiro
 
 <div>
   <p>
@@ -44,4 +42,4 @@
   </a>
 </div>
 
-![Snake animation](https://github.com/hyuko21/hyuko21/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/hyuko21/hyuko21/blob/output/github-snake-dark.svg)
