@@ -1,4 +1,5 @@
-name: daily-devcard
+name: Generate Data
+
 on:
   workflow_dispatch:
   push:
@@ -6,14 +7,41 @@ on:
       - main
   schedule:
     - cron: "0 0 * * *"
+
 jobs:
   devcard:
+    name: Generate DevCard (daily.dev)
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: devcard
+      - name: devcard-v1
+        uses: dailydotdev/action-devcard@2.3.0
+        with:
+          devcard_id: ${{ secrets.DEVCARD_ID }}
+          commit_filename: "devcard-v1.svg"
+      - name: devcard-v2
         uses: dailydotdev/action-devcard@3.0.0
         with:
           user_id: ${{ secrets.DEVCARD_ID }}
-          commit_message: "chore: update ${filename}"
+          commit_filename: "devcard-v2.png"
+
+  commits:
+    name: Update commits data
+    runs-on: ubuntu-latest
+    steps:
+      # Snake Animation
+      - name: snake-grid-animation
+        uses: Platane/snk@master
+        id: snake-gif
+        with:
+          github_user_name: hyuko21
+          svg_out_path: dist/github-contribution-grid-snake.svg
+
+      - name: ghpages-output
+        uses: crazy-max/ghaction-github-pages@v4.0.0
+        with:
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          user_id: ${{ secrets.DEVCARD_ID }}
