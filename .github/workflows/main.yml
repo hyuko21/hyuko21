@@ -15,16 +15,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: devcard-v1
-        uses: dailydotdev/action-devcard@2.3.0
-        with:
-          devcard_id: ${{ secrets.DEVCARD_ID }}
-          commit_filename: "devcard-v1.svg"
-      - name: devcard-v2
+      - name: devcard
         uses: dailydotdev/action-devcard@3.0.0
         with:
           user_id: ${{ secrets.DEVCARD_ID }}
-          commit_filename: "devcard-v2.png"
+          commit_filename: "devcard.png"
 
   commits:
     name: Update commits data
