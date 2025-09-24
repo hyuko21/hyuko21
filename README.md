@@ -17,7 +17,7 @@
 
 <div>
   <p>
-   Love Sports, Music, Games, TV Movies/Shows and Geek stuff. But also learning new things, developing new technologies and sharing knowledge.<br/><br/>Currently I keep my focus on the server side (Back-end), both in the implementation of APIs and in the implantation of Web services, through cloud computing services. But I am always willing to face challenges for the product project to reach its goals, and also, for my own personal/professional growth.
+   Love Sports, Music, Games, TV Movies/Shows and Geek stuff. But also learning new things, developing new technologies and sharing knowledge.<br/><br/>I like creating apps in general, as matter of fact I'm always willing to face challenges, because for me everything is just a whole new opportunity to discover/build amazing things.
   </p>
   <div style="display: inline_block"><br>
     <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
